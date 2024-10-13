@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClubConnect</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <h1 class="navbar-logo">ClubConnect</h1>
+        <ul class="navbar-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Clubs</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <button class="btn-login">Sign Up</button>
+        <button class="btn-login">Login</button>
+        <button class="btn-login" id="adminLoginBtn">Admin Login</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to ClubConnect</h1>
+        <p>Your hub for joining and exploring clubs at your university!</p>
+        <button class="btn-discover">Discover Clubs</button>
+      </div>
+    </section>
+
+    <!-- Featured Clubs Section -->
+    <section class="featured-clubs">
+      <h2>Featured Clubs</h2>
+      <div class="club-cards">
+        <div class="club-card">
+          <img
+            src="assets/bottom-view-women-holding-ball.jpg"
+            alt="Sports Club"
+          />
+          <h3>Sports Club</h3>
+          <p>
+            Boost your fitness, teamwork, and competitive spirit through fun
+            athletic activities and events.
+          </p>
+        </div>
+        <div class="club-card">
+          <img
+            src="assets/hologram-projector-screen-with-cloud-system-technology.jpg"
+            alt="AWS Club"
+          />
+          <h3>AWS</h3>
+          <p>
+            Unlock the power of cloud computing with hands-on AWS projects and
+            learning.
+          </p>
+        </div>
+        <div class="club-card">
+          <img src="assets/gdsc-social-share.png" alt="GDSC Club" />
+          <h3>GDSC</h3>
+          <p>
+            Learn, collaborate, and build innovative tech solutions with Google
+            Developer Student Club.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Footer included from external file -->
+      <div id="footer-container"></div>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="js/App.js"></script>
+    <script>
+      // Load footer content dynamically
+      document.getElementById("footer-container").innerHTML =
+        '<object type="text/html" data="footer.html"></object>';
+    </script>
+  </body>
+</html>

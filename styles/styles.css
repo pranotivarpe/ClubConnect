@@ -1,0 +1,213 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #000;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #ffc107;
+  font-size: 1.5rem;
+  margin-right: 30px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 1rem;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #ffc107;
+}
+
+.navbar-login {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-login {
+  background-color: #ffc107;
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #ff9807;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #ffc107;
+  padding: 80px 20px;
+  text-align: center;
+  color: black;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.btn-discover {
+  background-color: #000;
+  color: #ffc107;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn-discover:hover {
+  color: #fff;
+}
+
+/* Featured Clubs Section */
+.featured-clubs {
+  padding: 2rem;
+  text-align: center;
+}
+
+.featured-clubs h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.club-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.club-card {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.club-card img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.club-card h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.club-card p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Admin Login */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  border-color: #ffc107;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+
+button.admin-btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #000;
+  color: #ffc107;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button.admin-btn-login:hover {
+  background-color: #ffc107;
+  color: #000;
+}
