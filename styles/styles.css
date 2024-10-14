@@ -109,6 +109,7 @@ body {
 
 .club-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -117,6 +118,7 @@ body {
   padding: 1rem;
   border-radius: 8px;
   width: 30%;
+  margin-top: 2rem;
 }
 
 .club-card img {

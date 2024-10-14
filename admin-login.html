@@ -9,19 +9,41 @@
   <body>
     <div class="login-container">
       <h2>Admin Login</h2>
-      <form action="/admin-dashboard" method="POST">
+      <form id="adminLoginForm">
         <div class="form-group">
           <label for="username">Username</label>
-          <input type="text" id="username" name="username" required />
+          <input type="text" id="username" required />
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
+          <input type="password" id="password" required />
         </div>
-        <button type="submit" class="admin-btn-login">Login</button>
+        <button type="submit" class="btn-login">Login</button>
       </form>
+      <p id="error-message" style="color: red; display: none;">
+        Invalid credentials, please try again!
+      </p>
     </div>
 
-    <script src="js/app.js"></script>
+    <script>
+      // Add your validation logic here
+      document
+        .getElementById("adminLoginForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form from submitting normally
+
+          // Example of hardcoded username and password for login validation
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+
+          if (username === "admin" && password === "password123") {
+            // On successful login, redirect to admin-dashboard.html
+            window.location.href = "admin-dashboard.html";
+          } else {
+            // Show error message
+            document.getElementById("error-message").style.display = "block";
+          }
+        });
+    </script>
   </body>
 </html>

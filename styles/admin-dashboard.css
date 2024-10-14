@@ -1,0 +1,203 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #000;
+  color: #ffc107;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #343a40;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  display: inline-block; /* Changed to inline-block for horizontal alignment */
+  padding: 12px 24px;
+  background-color: #ffc107;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 10px; /* Margin for spacing between buttons */
+}
+
+button:hover {
+  background-color: #ffae00;
+}
+
+#club-section,
+#event-section,
+#tournament-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.item-container {
+  margin-bottom: 15px;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.item-content h3 {
+  flex: 1;
+  margin: 0;
+  padding-right: 20px;
+  font-size: 22px;
+  color: #343a40;
+}
+
+div {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-container button:hover {
+  background-color: #555;
+}
+
+/* Additional styles for edit and delete buttons */
+.edit-btn {
+  background-color: #28a745; /* Green for Edit */
+  margin-left: 10px; /* Space between buttons */
+}
+
+.edit-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red for Delete */
+  margin-left: 10px; /* Space between buttons */
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Club approval */
+
+.item-container {
+  margin-bottom: 15px;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.item-content h3 {
+  flex: 1;
+  margin: 0;
+  padding-right: 20px;
+  font-size: 22px;
+  color: #343a40;
+}
+
+.approve-btn {
+  background-color: #28a745; /* Green for Approve */
+  margin-left: 10px; /* Space between buttons */
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.approve-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.reject-btn {
+  background-color: #dc3545; /* Red for Reject */
+  margin-left: 10px; /* Space between buttons */
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reject-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
