@@ -1,0 +1,67 @@
+/* Common styles */
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.sidebar {
+  width: 250px;
+  height: 40rem;
+  background-color: #000;
+  padding: 30px;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-header {
+  color: #ffc107;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.item-list .item-container {
+  background-color: #f1f1f1;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.item-container .edit-btn,
+.item-container .delete-btn {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.item-container .delete-btn {
+  background-color: #dc3545;
+}

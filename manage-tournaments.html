@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Tournaments</title>
+    <link rel="stylesheet" href="styles/manage-styles.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h1>ClubConnect</h1>
+      </div>
+      <ul>
+        <li><a href="Admin-dashboard.html">Dashboard</a></li>
+        <li><a href="manage-clubs.html">Manage Clubs</a></li>
+        <li><a href="manage-events.html">Manage Events</a></li>
+        <li><a href="manage-tournaments.html">Manage Tournaments</a></li>
+        <li><a href="admin-login.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <h2>Manage Tournaments</h2>
+      <button onclick="addTournament()">Add Tournament</button>
+      <div id="tournament-section" class="item-list">
+        <!-- Tournaments will be displayed here dynamically -->
+      </div>
+    </div>
+
+    <script src="js/admin-dashboard.js"></script>
+  </body>
+</html>

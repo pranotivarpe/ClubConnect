@@ -7,42 +7,45 @@
     <link rel="stylesheet" href="styles/admin-dashboard.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <h1>Admin Dashboard</h1>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h1>ClubConnect</h1>
+      </div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Manage Clubs</a></li>
-        <li><a href="#">Manage Events</a></li>
-        <li><a href="#">Manage Tournaments</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="manage-clubs.html">Manage Clubs</a></li>
+        <li><a href="manage-events.html">Manage Events</a></li>
+        <li><a href="manage-tournaments.html">Manage Tournaments</a></li>
         <li><a href="admin-login.html">Logout</a></li>
       </ul>
-    </nav>
-
-    <div class="container">
-      <h2>Manage Club Approvals</h2>
-      <button onclick="addClub()">Add New Club</button>
-      <div id="club-approval-section"></div>
     </div>
 
-    <div class="container">
-      <h2>Manage Clubs</h2>
-      <div class="button-container">
-        <div onclick="viewAllClubs()"></div>
-      </div>
-      <div id="club-section"></div>
+    <div class="main-content">
+      <nav class="topbar">
+        <div class="profile">Admin</div>
+      </nav>
 
-      <h2>Manage Events</h2>
-      <div class="button-container">
-        <button onclick="addEvent()">Add New Event</button>
-      </div>
-      <div id="event-section"></div>
+      <div class="dashboard-content">
+        <h2>Dashboard Overview</h2>
 
-      <h2>Manage Tournaments</h2>
-      <div class="button-container">
-        <button onclick="addTournament()">Add New Tournament</button>
-      </div>
-      <div id="tournament-section"></div>
-    </div>
+        <!-- Overview stats section -->
+        <div class="stats">
+          <div class="stat-box">
+            <h3 id="total-clubs">0</h3>
+            <p>Total Clubs</p>
+          </div>
+          <div class="stat-box">
+            <h3 id="total-members">0</h3>
+            <p>Total Club Members</p>
+          </div>
+          <div class="stat-box">
+            <h3 id="pending-approvals">0</h3>
+            <p>Pending Approvals</p>
+          </div>
+         
+        </div>
+
+        
 
     <script src="js/admin-dashboard.js"></script>
   </body>
